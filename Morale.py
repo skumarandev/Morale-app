@@ -88,5 +88,9 @@ def main():
         st.success("Thank you! Your feedback has been recorded anonymously.")
         st.balloons()
 
+
+if st.button("Go to Admin Page"):
+    st.switch_page("pages/SavedData.py")    
+
 if __name__ == "__main__":
     main()
