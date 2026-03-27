@@ -44,7 +44,8 @@ if check_password():
 
 
     # 1. Calculate the average
-    df["average"] = df.iloc[:, 2:7].mean(axis=1)
+    cols_to_average = df.iloc[:, 1:7].apply(pd.to_numeric, errors='coerce')
+    df["average"] = cols_to_average.mean(axis=1)
 
     # 2. Define your conditions
     conditions = [
