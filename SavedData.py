@@ -7,7 +7,7 @@ import pandas as pd
 conn = sqlite3.connect('survey_results.db')
 
 # 2. Fetch data directly into a pandas DataFrame
-query = "SELECT * FROM your_table_name"
+query = "SELECT * FROM responses"
 df = pd.read_sql(query, conn)
 
 # 3. Close the connection
