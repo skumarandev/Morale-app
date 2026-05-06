@@ -61,6 +61,8 @@ def main():
 
     #st.write('---')
     #st.info('After submitting your responses, open the SavedData page to review the text answers in the separate table.')
+if st.button("Go to Admin Page"):
+    st.switch_page("pages/SavedData.py")    
 
 
 if __name__ == '__main__':
