@@ -59,8 +59,8 @@ def main():
             save_text_response(motivation.strip(), expectations.strip())
             st.success('Thank you! Your answers have been saved.')
 
-    st.write('---')
-    st.info('After submitting your responses, open the SavedData page to review the text answers in the separate table.')
+    #st.write('---')
+    #st.info('After submitting your responses, open the SavedData page to review the text answers in the separate table.')
 
 
 if __name__ == '__main__':
